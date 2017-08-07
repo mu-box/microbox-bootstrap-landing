@@ -1,0 +1,11 @@
+run.config:
+  engine: ruby
+  fs_watch: true
+  extra_packages:
+    - nodejs
+  cache_dirs:
+    - node_modules
+  extra_path_dirs:
+    - node_modules/.bin
+  extra_steps:
+    - yarn install

@@ -1,0 +1,15 @@
+body              { @include bg-gradient($bg-left, $bg-right); }
+
+svg#burst line    { stroke: $burst; }
+svg#shadow stop   { stop-color: $shadow; }
+
+
+.content, .footer {
+  h2,h4           { color: $heading; }
+  p,li            { color: $text; }
+  a               { color: $link; &:hover { color: $link-hover; }}
+}
+
+.links            { border-top-color: $text; }
+
+svg#heart path    { fill: $text; }
