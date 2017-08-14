@@ -1,4 +1,4 @@
-body              { @include bg-gradient($bg-left, $bg-right); }
+html              { @include bg-gradient($bg-left, $bg-right); }
 
 svg#burst line    { stroke: $burst; }
 svg#shadow stop   { stop-color: $shadow; }
