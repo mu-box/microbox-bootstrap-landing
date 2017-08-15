@@ -4,14 +4,15 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}
-    / Use the title from a page's frontmatter if it has one
     %title= current_page.data.project+' Running with Nanobox' || "Nanobox Bootstrap"
 
-    / Stylesheet & favicon - need to be updated for final bootstrap template
+    / Stylesheet & favicon - START
+
     = stylesheet_link_tag "styles"
     = favicon_tag "favicon.png"
 
-    / Google Fonts
+    / Stylesheet & favicon - END
+
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet"}
   %body
     .wrapper
@@ -25,14 +26,7 @@
 
       .content
         %h2 Woohoo! You’re running #{current_page.data.project} with Nanobox!
-        %p
-          Nanobox has bootstrapped
-          - if ["A", "E", "I", "O", "U"].include? current_page.data.project[0]
-            an
-          - else
-            a
-          =current_page.data.project
-          project for you inside a fully containerized, virtual #{current_page.data.language} environment. The generated codebase is  available in your local filesystem. Any changes there will be reflected here.
+        %p Nanobox has bootstrapped #{ ('an' if ["A", "E", "I", "O", "U"].include? current_page.data.project[0]) || 'a'} #{current_page.data.project} project for you inside a fully containerized, virtual #{current_page.data.language} environment. The generated codebase is  available in your local filesystem. Any changes there will be reflected here.
         .links
           .list
             %h4 More Info
