@@ -45,7 +45,10 @@ configure :development do
   activate :directory_indexes
 end
 
-# configure :build do
+configure :build do
+  after_build do
+    system('htmlbeautifier build/*/*/*.html')
+  end
 #   activate :minify_css
 #   activate :minify_javascript
-# end
+end

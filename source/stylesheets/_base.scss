@@ -23,8 +23,9 @@
 }
 
 // Base Styles
-body          { padding: 20px; box-sizing: border-box; margin: 0; height: 100%; width: 100%; font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.wrapper      { width: 100%; max-width: 460px; margin: 8vh auto 15vh; }
+html          { min-height: 100%; }
+body          { padding: 20px; box-sizing: border-box; margin: 0; font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.wrapper      { max-width: 460px; margin: 8vh auto 15vh; }
 
 .logo         { position: relative; width: 220px; height: 220px; margin: 0 auto;
   & > *       { position: absolute; }
