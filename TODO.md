@@ -16,6 +16,7 @@ Node.js
 [x] Feathers
 [x] Sails
 [x] Hapi
+[x] Moleculer
 
 Ruby
 [ ] Discourse
