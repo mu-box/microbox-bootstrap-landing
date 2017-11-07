@@ -42,9 +42,10 @@ body          { padding: 20px; box-sizing: border-box; margin: 0; font-family: '
   h4          { font-size: .9em; text-transform: uppercase; margin-bottom: 0; }
   p,li        { font-size: 1em; line-height: 1.5em; }
   a           { text-decoration: underline; transition: color .2s; }
+  .qs-repo    { font-size: .9em; font-style: italic; }
 }
 
-.links        { @include flex; margin-top: 2em; padding-top: 1em; justify-content: flex-start; border-top-width: 1px; border-top-style: solid;
+.links        { @include flex; margin: 2em 0; padding: 1em 0 1.25em; justify-content: flex-start; border-width: 1px 0; border-style: solid;
   .list       { margin-right: 2em; flex: 50; &:last-child { margin-right: 0; }}
   ul          { padding: 0; margin-top: .35em; list-style: none; }
 }

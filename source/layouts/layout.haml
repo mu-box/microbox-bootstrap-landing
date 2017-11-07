@@ -26,7 +26,7 @@
 
       .content
         %h2 Woohoo! You’re running #{current_page.data.project} with Nanobox!
-        %p Nanobox has bootstrapped #{ ('an' if ["A", "E", "I", "O", "U"].include? current_page.data.project[0]) || 'a'} #{current_page.data.project} project for you inside a fully containerized, virtual #{current_page.data.language} environment. The generated codebase is available in your local filesystem. Any changes there will be reflected here.
+        %p Nanobox has bootstrapped #{ ('an' if ["A", "E", "I", "O", "U"].include? current_page.data.project[0]) || 'a'} #{current_page.data.project} project for you inside a fully containerized #{current_page.data.language} environment. Deploy all the things!
         .links
           .list
             %h4 More Info
@@ -39,6 +39,7 @@
             %ul
               %li #{link_to 'Nanobox Slack', 'https://nanoboxio.slack.com', target: '_blank'}
               %li #{link_to 'Email Us', 'mailto:hello@nanobox.io'}
+        %p.qs-repo View the #{link_to current_page.data.project+' Quickstart', current_page.data.quickstart_repo+'#readme', target: '_blank'} project for information about what was involved in the bootstrapping process.
         .footer
           %p
             Bootstrapped with
