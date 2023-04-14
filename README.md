@@ -1,23 +1,23 @@
-# Nanobox Bootstrap Landing Page Generator
+# Microbox Bootstrap Landing Page Generator
 
-This project is used to generate static HTML pages and accompanying assets for Nanobox quickstarts/bootstraps. It's built using [Middleman](https://middlemanapp.com/) and is designed to run using [Nanobox](https://nanobox.io). If you haven't already, [create a free Nanobox account](https://dashboard.nanobox.io/users/register) and [download and install Nanobox](https://dashboard.nanobox.io/download).
+This project is used to generate static HTML pages and accompanying assets for Microbox quickstarts/bootstraps. It's built using [Middleman](https://middlemanapp.com/) and is designed to run using [Microbox](https://microbox.cloud). If you haven't already, [create a free Microbox account](https://dashboard.microbox.cloud/users/register) and [download and install Microbox](https://dashboard.microbox.cloud/download).
 
 ## Start the Project
 From the root of the the project, run:
 
 ```bash
 # add a convenient way to access the app in a browser
-nanobox dns add local bootstrap-landing.dev
+microbox dns add local bootstrap-landing.dev
 
-# start Nanobox and drop into a console
-nanobox run
+# start Microbox and drop into a console
+microbox run
 
 # start the middleman server
 middleman
 ```
 
 ## Generating the Static Files
-To generate all the static files, from inside the Nanobox console, run:
+To generate all the static files, from inside the Microbox console, run:
 
 ```bash
 middlman build
